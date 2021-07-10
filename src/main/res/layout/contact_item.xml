@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.bishop.mycontactapp.MainActivity">
+
+
+    <TextView
+        android:id="@+id/contact_display"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="36dp"
+        android:text="@string/contact"
+        android:textColor="@color/teal_700"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/fname_display"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.455"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.903" />
+
+    <TextView
+        android:id="@+id/contact_id_display"
+        android:layout_width="61dp"
+        android:layout_height="31dp"
+        android:textColor="@color/teal_700"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="@+id/contact_display"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.201"
+        app:layout_constraintStart_toEndOf="@+id/contact_display"
+        app:layout_constraintTop_toTopOf="@+id/contact_display"
+        app:layout_constraintVertical_bias="1.0"
+        tools:text="1" />
+
+
+    <TextView
+        android:id="@+id/fname_display"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:textColor="@color/teal_700"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/contact_display"
+        app:layout_constraintHorizontal_bias="0.362"
+        app:layout_constraintStart_toStartOf="@+id/contact_display"
+        tools:layout_editor_absoluteY="218dp"
+        tools:text="First Name" />
+
+    <TextView
+        android:id="@+id/lname_display"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:textColor="@color/teal_700"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/fname_display"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/fname_display"
+        app:layout_constraintTop_toBottomOf="@+id/fname_display"
+        tools:text="Last Name" />
+
+    <TextView
+        android:id="@+id/phonenumber_display"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:ems="10"
+        android:autoSizeMaxTextSize="16sp"
+        android:textColor="@color/teal_700"
+        android:textSize="16sp
+"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/lname_display"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/lname_display"
+        app:layout_constraintTop_toBottomOf="@+id/lname_display"
+        tools:text="Phone Number" />
+
+    <TextView
+        android:id="@+id/email_display"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:ems="10"
+        android:textColor="@color/teal_700"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/phonenumber_display"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/phonenumber_display"
+        app:layout_constraintTop_toBottomOf="@+id/phonenumber_display"
+        tools:text="E-Mail" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
